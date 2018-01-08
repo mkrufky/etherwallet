@@ -29,13 +29,13 @@ const dist_CX      = './chrome-extension/';
 
 // Error / Success Handling
 let onError = function(err) {
-    notify.onError({
-        title: "Error: " + err.plugin,
-        subtitle: "<%= file.relative %>",
-        message: "<%= error.message %>",
-        sound: "Beep",
-        icon: app + "images/icons/icon48.png",
-    })(err);
+    // notify.onError({
+    //     title: "Error: " + err.plugin,
+    //     subtitle: "<%= file.relative %>",
+    //     message: "<%= error.message %>",
+    //     sound: "Beep",
+    //     icon: app + "images/icons/icon48.png",
+    // })(err);
     console.log(err.toString());
     this.emit('end');
 };
@@ -44,7 +44,7 @@ function onSuccess(msg) {
     return {
         message: msg + " Complete! ",
         //sound:     "Pop",
-        icon: app + "images/icons/icon48.png",
+        //icon: app + "images/icons/icon48.png",
         onLast: true
     }
 }
