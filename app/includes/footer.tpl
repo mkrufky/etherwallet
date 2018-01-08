@@ -172,7 +172,6 @@
 
 </div>
 
-
 </footer>
 
 @@if (site === 'mew' ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "mew" } ) }
