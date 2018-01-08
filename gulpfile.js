@@ -49,13 +49,6 @@ function onSuccess(msg) {
     }
 }
 
-function notifyFunc(msg) {
-    return gulp.src('.', { read: false })
-        .pipe(notify(onSuccess(msg)))
-}
-
-
-
 // HTML / TPL Pages
 let htmlFiles = app + 'layouts/*.html';
 let tplFiles = app + 'includes/*.tpl';
@@ -66,7 +59,7 @@ gulp.task('html', function(done) {
         .pipe(fileinclude({ prefix: '@@', basepath: '@file' }))
         .pipe(gulp.dest(dist))
         .pipe(gulp.dest(dist_CX))
-        .pipe(notify(onSuccess('HTML')))
+        
 });
 
 
@@ -91,7 +84,7 @@ gulp.task('styles', function() {
         .pipe(rename(less_destFileMin))
         .pipe(gulp.dest(less_destFolder))
         .pipe(gulp.dest(less_destFolder_CX))
-        .pipe(notify(onSuccess('Styles')))
+        
 });
 
 
@@ -116,7 +109,6 @@ function bundle_js(bundler) {
         .pipe(rename(js_destFile))
         .pipe(gulp.dest(js_destFolder))
         .pipe(gulp.dest(js_destFolder_CX))
-        .pipe(notify(onSuccess('JS')))
 }
 
 function bundle_js_debug(bundler) {
@@ -127,7 +119,6 @@ function bundle_js_debug(bundler) {
         .pipe(rename(js_destFile))
         .pipe(gulp.dest(js_destFolder))
         .pipe(gulp.dest(js_destFolder_CX))
-        .pipe(notify(onSuccess('JS')))
 }
 
 
@@ -159,7 +150,6 @@ gulp.task('staticJS', function() {
         .pipe(concat(js_destFileStatic))
         .pipe(uglify())
         .pipe(gulp.dest(js_destFolderStatic))
-        .pipe(notify(onSuccess('StaticJS')))
 });
 
 
@@ -205,7 +195,6 @@ gulp.task('copy', ['staticJS'], function() {
     return gulp.src(cxSrcFiles)
         .pipe(gulp.dest(dist_CX + 'browser_action'))
 
-    .pipe(notify(onSuccess(' Copy ')))
 });
 
 
@@ -225,7 +214,7 @@ gulp.task('clean', function() {
         ], { read: false })
         .pipe(plumber({ errorHandler: onError }))
         .pipe(clean())
-        .pipe(notify(onSuccess(' Clean ')))
+        
 });
 
 
@@ -261,12 +250,12 @@ gulp.task('zip', ['getVersion'], function() {
         }))
         .pipe(zip('./etherwallet-' + versionNum + '.zip'))
         .pipe(gulp.dest('./releases/'))
-        .pipe(notify(onSuccess('Zip Dist ' + versionNum)));
+        
     return gulp.src(dist_CX + '**/**/*')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(zip('./chrome-extension-' + versionNum + '.zip'))
         .pipe(gulp.dest('./releases/'))
-        .pipe(notify(onSuccess('Zip CX ' + versionNum)))
+        
 });
 
 
@@ -312,12 +301,12 @@ gulp.task('travisZip', ['getVersion'], function() {
         }))
         .pipe(zip('./etherwallet-' + versionNum + '.zip'))
         .pipe(gulp.dest('./deploy/'))
-        .pipe(notify(onSuccess('Zip Dist ' + versionNum)));
+        
     return gulp.src(dist_CX + '**/**/*')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(zip('./chrome-extension-' + versionNum + '.zip'))
         .pipe(gulp.dest('./deploy/'))
-        .pipe(notify(onSuccess('Zip CX ' + versionNum)))
+        
 });
 
 
@@ -336,7 +325,7 @@ gulp.task('commit', ['getVersion'], function() {
         .pipe(shell([
             'git commit -m "Rebuilt and cleaned everything. Done for now."'
         ]))
-        .pipe(notify(onSuccess('Commit')))
+        
 });
 
 // commit with current v# in manifest
@@ -345,7 +334,7 @@ gulp.task('commitV', ['getVersion'], function() {
         .pipe(shell([
             'git commit -m " ' + versionMsg + ' "'
         ]))
-        .pipe(notify(onSuccess('Commit w ' + versionMsg)))
+        
 });
 
 // tag with current v# in manifest
@@ -354,7 +343,7 @@ gulp.task('tag', ['getVersion'], function() {
         .pipe(shell([
             'git tag -a ' + versionNum + ' -m " ' + versionMsg + '"'
         ]))
-        .pipe(notify(onSuccess('Tagged Commit' + versionMsg)))
+        
 });
 
 // Push Release to Mercury
@@ -363,7 +352,7 @@ gulp.task('push', ['getVersion'], function() {
         .pipe(shell([
             'git push origin mercury ' + versionNum
         ]))
-        .pipe(notify(onSuccess('Push')))
+        
 });
 
 // Push Live
@@ -373,7 +362,7 @@ gulp.task('pushlive', ['getVersion'], function() {
         .pipe(shell([
             'git subtree push --prefix dist origin gh-pages'
         ]))
-        .pipe(notify(onSuccess('Push Live')))
+        
 });
 
 // Prep & Release
