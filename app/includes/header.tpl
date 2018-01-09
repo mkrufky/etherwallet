@@ -76,21 +76,15 @@
 
 <section class="bg-gradient header-branding">
   <section class="container">
-    @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="Trinity Web Wallet" />
-        <p class="small visible-xs">3.11.2</p>
+        <!-- <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="Trinity Web Wallet" /> -->
+        <h1>Trinity Web Wallet</h1>
+        <p class="small visible-xs">0.0.1</p>
       </a>
-    }
-    @@if (site === 'cx'  ) {
-      <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
-        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="Trinity Web Wallet" />
-        <p class="small visible-xs">3.11.2</p>
-      </a>
-    }
+   
     <div class="tagline">
 
-    <span class="hidden-xs">3.11.2</span>
+    <span class="hidden-xs">0.0.1</span>
 
     <span class="dropdown dropdown-lang" ng-cloak>
       <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle  btn btn-white" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
