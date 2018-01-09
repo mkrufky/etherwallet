@@ -193,7 +193,7 @@
             <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
       </li>
       <li class="nav-item help">
-        <a href="https://github.org/trinity/trinity-web-wallet/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/trinityfx/trinity-web-wallet/" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>
@@ -209,7 +209,6 @@
      ng-mouseleave="scrollHoverOut()">&#187;</a>
 </nav>
 
-@@if (site === 'mew' ) { @@include( './header-node-modal.tpl', { "site": "mew" } ) }
-@@if (site === 'cx'  ) { @@include( './header-node-modal.tpl', { "site": "cx"  } ) }
+@@include( './header-node-modal.tpl', { "site": "mew" } )
 
 </header>
