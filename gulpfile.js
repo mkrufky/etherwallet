@@ -79,9 +79,7 @@ gulp.task('styles', function () {
         .pipe(cssnano({ autoprefixer: false, safe: true }))
         .pipe(rename(less_destFileMin))
         .pipe(gulp.dest(less_destFolder))
-
 });
-
 
 // js: Browserify
 let js_watchFolder = app + 'scripts/**/*.{js,json,html}';
