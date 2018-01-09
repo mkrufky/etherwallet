@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>wallet.trinityfx.org</title>
 
-<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
-<link href="https://www.myetherwallet.com" rel="canonical">
-<meta content="https://www.myetherwallet.com" property="og:url">
-<meta content="https://www.myetherwallet.com" name="twitter:url">
+<meta property="og:title" content="wallet.trinityfx.org - Trinity Web Wallet">
+<meta property="og:site_name" content="wallet.trinityfx.org - Trinity Web Wallet">
+<meta name="twitter:title" content="wallet.trinityfx.org - Trinity Web Wallet">
+<meta name="apple-mobile-web-app-title" content="wallet.trinityfx.org - Trinity Web Wallet">
+<link href="https://wallet.trinityfx.org" rel="canonical">
+<meta content="https://wallet.trinityfx.org" property="og:url">
+<meta content="https://wallet.trinityfx.org" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
-<meta name="description" content="MyEtherWallet (MEW) is a free, open-source, client-side interface for generating Ethereum wallets & more. Interact with the Ethereum blockchain easily & securely.">
-<meta property="og:description"  content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
-<meta name="twitter:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
+<meta name="description" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
+<meta property="og:description"  content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
+<meta name="twitter:description" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
-<meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
+<!-- <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" /> -->
 <link href="images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
 <link href="images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
@@ -32,7 +32,7 @@
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
 <meta name="theme-color" content="#1d6986">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
-<meta property="og:url" content="https://www.myetherwallet.com" />
+<meta property="og:url" content="https://wallet.trinityfx.org" />
 <meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
@@ -47,27 +47,17 @@
 {
 "@context": "http://schema.org",
 "@type" : "Organization",
-"name" : "MyEtherWallet",
-"legalName" : "MyEtherWallet LLC",
-"url" : "https://www.myetherwallet.com/",
-"contactPoint" : [{
-  "@type" : "ContactPoint",
-  "email" : "support@myetherwallet.com",
-  "url"   : "https://myetherwallet.com",
-  "contactType" : "customer service"
-}],
-"logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
-"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
+"name" : "Trinity Web Wallet",
+"legalName" : "",
+"url" : "https://wallet.trinityfx.org/"],
+"logo" : "https://wallet.trinityfx.org/images/myetherwallet-logo.png",
+"description": "Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.",
 "sameAs" : [
-  "https://www.myetherwallet.com/",
-  "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
-  "https://www.facebook.com/MyEtherWallet/",
-  "https://twitter.com/myetherwallet",
-  "https://medium.com/@myetherwallet",
-  "https://myetherwallet.github.io/knowledge-base/",
-  "https://github.com/kvhnuke/etherwallet",
-  "https://github.com/MyEtherWallet",
-  "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
+  "https://wallet.trinityfx.org/",
+  "https://twitter.com/trinityfxorg",
+  "https://medium.com/trinityfx",
+  "https://github.com/trinityfx/trinity-web-wallet",
+  "https://github.com/trinityfx"
 ]
 }
 </script>
@@ -79,17 +69,7 @@
 @@if (site === 'mew' ) {
   <div class="small announcement annoucement-danger">
     <div class="container">
-      DON'T GET PHISHED, please! 🎣 Thank you! 🤗
-      <br />
-      1. BOOKMARK <a href="https://www.myetherwallet.com"> MYETHERWALLET.COM </a>
-      <span class="hidden-xs">
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        2. INSTALL <a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer">EAL</a>
-        or
-        <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">MetaMask</a>
-        or
-        <a href="https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige" target="_blank" rel="noopener noreferrer">Cryptonite</a>
-      </span>
+      DON'T GET PHISHED, BOOKMARK <a href="https://wallet.trinityfx.org"> https://wallet.trinityfx.org</a>
     </div>
   </div>
 }
@@ -98,13 +78,13 @@
   <section class="container">
     @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="Trinity Web Wallet" />
         <p class="small visible-xs">3.11.2</p>
       </a>
     }
     @@if (site === 'cx'  ) {
       <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
-        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="Trinity Web Wallet" />
         <p class="small visible-xs">3.11.2</p>
       </a>
     }
@@ -173,14 +153,6 @@
              rel="noopener noreferrer"></a>
         </div>
       </ul>
-      <p class="dropdown-gas__msg"
-         ng-show="gasPriceMsg"
-         ng-hide="ajaxReq.type!='ETH'">
-        The network is really full right now. Check
-        <a href="https://ethgasstation.info/"
-           target="_blank" rel="noopener noreferrer">Eth Gas Station</a>
-        for gas price to use.
-      </p>
     </span>
 
     <!-- Warning: The separators you see on the frontend are in styles/etherwallet-custom.less. If you add / change a node, you have to adjust these. Ping tayvano if you're not a CSS wizard -->
@@ -219,7 +191,6 @@
   <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
   <div class="nav-scroll">
     <ul class="nav-inner">
-      @@if (site === 'mew' ) {
       <li ng-repeat="tab in tabNames track by $index" \
           class="nav-item {{tab.name}}" \
           ng-class="{active: $index==gService.currentTab}"
@@ -227,18 +198,8 @@
           ng-click="tabClick($index)">
             <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
       </li>
-      }
-      @@if (site === 'cx' ) {
-      <li ng-repeat="tab in tabNames track by $index" \
-          class="nav-item {{tab.name}}" \
-          ng-class="{active: $index==gService.currentTab}"
-          ng-show="tab.cx"
-          ng-click="tabClick($index)">
-            <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
-      </li>
-      }
       <li class="nav-item help">
-        <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.org/trinity/trinity-web-wallet/" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>

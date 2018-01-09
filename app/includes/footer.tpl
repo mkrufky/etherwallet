@@ -1,7 +1,7 @@
 <section class="pre-footer">
   <div class="container">
     <p>
-      MyEtherWallet.com does not hold your keys for you. We cannot access accounts, recover keys, reset passwords, nor reverse transactions. Protect your keys &amp; always check that you are on correct URL.
+      Trinity Web Wallet does not hold your keys for you. We cannot access accounts, recover keys, reset passwords, nor reverse transactions. Protect your keys &amp; always check that you are on correct URL.
       <a role="link" tabindex="0" data-toggle="modal" data-target="#disclaimerModal">
         You are responsible for your security.
       </a>
@@ -40,7 +40,7 @@
       </p>
 
       <p>
-        &copy; 2018 MyEtherWallet, LLC
+        &copy; 2018 MyEtherWallet, LLC (Thank you MyEtherWallet <3 Trinity)
       </p>
 
     </section>
@@ -75,9 +75,6 @@
             1MEWT2SGbqtz6mPCgFcnea8XmWV5Z4Wc6
           </span>
         </p>
-        <!--
-        <p>MYD: <span class="mono wrap">mewsupport.eth <small>0xf7e983781609012307f2514f63D526D83D24F466</small></span></p>
-        -->
         <h5 ng-hide="curLang=='en'">
           <i>🏅</i>
           <span translate="Translator_Desc"> Thank you to our translators </span>
@@ -101,13 +98,13 @@
       </p>
 
       <p>
-        <a href="https://www.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://wallet.trinityfx.org/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Unit Converters &amp; ENS Debugging
         </a>
       </p>
 
       <p>
-        <a href="https://www.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://wallet.trinityfx.org/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Sign Message
         </a>
       </p>
@@ -170,10 +167,6 @@
 
 @@if (site === 'mew' ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "mew" } ) }
 @@if (site === 'cx'  ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "cx"  } ) }
-
-@@if (site === 'mew' ) { @@include( './onboardingModal.tpl',   { "site": "mew" } ) }
-@@if (site === 'cx'  ) { @@include( './onboardingModal.tpl',   { "site": "cx"  } ) }
-
 
 </main>
 </body>
