@@ -28,14 +28,13 @@ nodes.nodeList = {
         'blockExplorerAddr': 'https://explorer.trinityfx.org/addr/[[address]]',
         'type': nodes.nodeTypes.TFX,
         'eip155': true,
-        'chainId': 1,
+        'chainId': 200624,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
         'service': 'Trinity Offical',
         'lib': new nodes.customNode('https://rpc.trinityfx.org', '')
     }
 };
-
 
 nodes.ethPrice = require('./nodeHelpers/ethPrice');
 module.exports = nodes;
