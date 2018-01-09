@@ -56,7 +56,7 @@
       </div>
       <br>
     </section>
-
+<!-- 
     <section class="block__help">
 
       <h2 translate="GEN_Help_0">
@@ -137,7 +137,7 @@
         </li>
       </ul>
 
-    </section>
+    </section> -->
 
   </article>
 
