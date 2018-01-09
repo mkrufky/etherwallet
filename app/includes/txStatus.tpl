@@ -34,7 +34,7 @@
 
     <div class="cont-md" ng-show="txInfo.status == txStatus.mined">
       <h3 class="text-success" translate="tx_FoundOnChain"> Transaction Found </h3>
-      <h5> <a href="https://etherscan.io/tx/{{ tx.hash }}" target="_blank" rel="noopener noreferrer"> {{ tx.hash }} </a> </h5>
+      <h5> <a href="https://explorer.trinityfx.org/tx/{{ tx.hash }}" target="_blank" rel="noopener noreferrer"> {{ tx.hash }} </a> </h5>
       <p><strong translate="tx_FoundOnChain_1"></strong></p>
       <ul>
         <li translate="tx_FoundOnChain_2"></li>
@@ -114,13 +114,6 @@
           </tr>
           <tr>
             <td>
-              <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                   <img src="images/icon-help.svg" class="help-icon" />
-                  <p class="account-help-text" translate="NONCE_Desc"></p>
-              </a>
               <span translate="OFFLINE_Step2_Label_5">
                 Nonce
               </span>
@@ -131,13 +124,6 @@
           </tr>
           <tr>
             <td>
-              <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                    <img src="images/icon-help.svg" class="help-icon" />
-                    <p class="account-help-text" translate="GAS_LIMIT_Desc"></p>
-              </a>
               <span translate="OFFLINE_Step2_Label_4">
                 Gas Limit
               </span>
@@ -148,13 +134,6 @@
           </tr>
           <tr>
             <td>
-              <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                   <img src="images/icon-help.svg" class="help-icon" />
-                   <p class="account-help-text" translate="GAS_PRICE_Desc"></p>
-              </a>
               <span translate="OFFLINE_Step2_Label_3">
                 Gas Price
               </span>
