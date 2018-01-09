@@ -200,7 +200,7 @@
           </button>
           <h3 class="modal-title text-warning">
             <span translate="NAV_ViewWallet">
-              View Wallet Info
+              View Wallet InfoView Wallet Info
             </span>:
             {{viewWallet.nick}}
           </h3>

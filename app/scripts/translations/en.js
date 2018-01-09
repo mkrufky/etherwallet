@@ -290,7 +290,7 @@ ERROR_13                        :  '(error_14) A wallet with this nickname alrea
 ERROR_14                        :  '(error_15) Wallet not found.',
 ERROR_15                        :  '(error_16) Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.',
 ERROR_16                        :  '(error_17) A wallet with this address already exists in storage. Please check your wallets page.',
-ERROR_17                        :  '(error_18) Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)',
+ERROR_17                        :  '(error_18) Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+).',
 ERROR_18                        :  '(error_19) All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.',
 ERROR_19                        :  '(error_20) Please enter a valid symbol',
 ERROR_20                        :  '(error_21) Not a valid ERC-20 token',

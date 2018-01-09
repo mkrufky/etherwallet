@@ -19,56 +19,6 @@
         View w/ Address Only
     </label>
 
-    <!-- MetaMask -->
-    <label aria-flowto="aria2"
-           class="radio">
-      <input aria-flowto="aria2"
-             type="radio"
-             aria-label="MetaMask / Mist"
-             ng-model="walletType"
-             value="metamask" />
-      <span translate="x_MetaMask">
-        MetaMask / Mist
-      </span>
-    </label>
-
-    <!-- Ledger -->
-    <label aria-flowto="aria3"
-           class="radio"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'">
-      <input aria-flowto="aria3"
-             type="radio"
-             aria-label="Ledger Hardware Wallet"
-             ng-model="walletType"
-             value="ledger"/>
-      Ledger Wallet
-    </label>
-
-    <!-- TREZOR -->
-    <label class="radio"
-           aria-flowto="aria4"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'">
-      <input aria-flowto="aria4"
-             type="radio"
-             aria-label="Trezor Hardware Wallet"
-             ng-model="walletType"
-             value="trezor" />
-      TREZOR
-    </label>
-
-    <!-- Digital Bitbox -->
-    <label aria-flowto="aria5"
-           class="radio"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
-      <input aria-flowto="aria5"
-             type="radio"
-             aria-label="Digital Bitbox hardware wallet"
-             ng-model="walletType"
-             value="digitalBitbox"/>
-      Digital Bitbox
-    </label>
-
-
     <!-- Keystore / JSON File -->
     <label aria-flowto="aria6"
            class="radio">
@@ -78,11 +28,6 @@
              ng-model="walletType"
              value="fileupload" />
       Keystore / JSON File
-      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        <img src="images/icon-help-3.svg" width="16px" height="16px" style="margin: 0 5px 5px">
-      </a>
     </label>
 
     <!-- Mnemonic Phrase -->
@@ -96,11 +41,6 @@
       <span translate="x_Mnemonic">
         Mnemonic Phrase
       </span>
-      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        <img src="images/icon-help-3.svg" width="16px" height="16px" style="margin: 0 5px 5px">
-      </a>
     </label>
 
     <!-- Private -->
@@ -114,38 +54,6 @@
       <span translate="x_PrivKey2">
         Private Key
       </span>
-      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        <img src="images/icon-help-3.svg" width="16px" height="16px" style="margin: 0 5px 5px">
-      </a>
-    </label>
-
-    <!-- Parity -->
-    <label aria-flowto="aria9"
-           class="radio"
-           style="display: none;"
-           id="showMeTheMoney">
-      <input aria-flowto="aria9"
-             aria-label="parity phrase"
-             type="radio"
-             ng-model="walletType"
-             value="parityBWallet" />
-      <span translate="x_ParityPhrase">
-        Parity Phrase
-      </span>
-    </label>
-
-    <label class="radio">
-      &nbsp;
-      <span translate="x_ParityPhrase">
-        Parity Phrase
-      </span>
-      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/parity-phrases-are-no-longer-supported.html"
-         target="_blank"
-         rel="noopener noreferrer">
-           <img src="images/icon-help-2.svg" width="16px" height="16px" style="margin: 0 5px 5px">
-      </a>
     </label>
   </section>
   <!-- / Column 1 - Select Type of Key -->
@@ -441,34 +349,15 @@
       </div>
       <ul>
         <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
+          <a href="https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts"
              target="_blank"
              rel="noopener noreferrer">
-              MetaMask
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              A Hardware Wallet
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
-          </a>
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/security/securing-your-ethereum.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Learning How to Protect Yourself and Your Funds
+              Learning to use the command line
           </a>
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code> &amp; <code>MYETHERWALLET LLC [US]</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code>.
       </div>
       <br />
       <div class="form-group">
@@ -517,34 +406,15 @@
       </div>
       <ul>
         <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
+          <a href="https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts"
              target="_blank"
              rel="noopener noreferrer">
-              MetaMask
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              A Hardware Wallet
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
-          </a>
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/security/securing-your-ethereum.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Learning How to Protect Yourself and Your Funds
+              Learning to use the command line
           </a>
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code> &amp; <code>MYETHERWALLET LLC [US]</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code>.
       </div>
       <br />
       <div class="form-group">
@@ -598,34 +468,15 @@
       </div>
       <ul>
         <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
+          <a href="https://github.com/ethereum/go-ethereum/wiki/Managing-your-accounts"
              target="_blank"
              rel="noopener noreferrer">
-              MetaMask
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              A Hardware Wallet
-          </a>
-          or
-          <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
-          </a>
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/security/securing-your-ethereum.html"
-             target="_blank"
-             rel="noopener noreferrer">
-              Learning How to Protect Yourself and Your Funds
+              Learning to use the command line
           </a>
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code> &amp; <code>MYETHERWALLET LLC [US]</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://wallet.trinityfx.org</code>.
       </div>
       <br />
       <div class="form-group">
