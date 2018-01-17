@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>wallet.trinityfx.org</title>
+<title>wallet.akroma.io</title>
 
-<meta property="og:title" content="wallet.trinityfx.org - Trinity Web Wallet">
-<meta property="og:site_name" content="wallet.trinityfx.org - Trinity Web Wallet">
-<meta name="twitter:title" content="wallet.trinityfx.org - Trinity Web Wallet">
-<meta name="apple-mobile-web-app-title" content="wallet.trinityfx.org - Trinity Web Wallet">
-<link href="https://wallet.trinityfx.org" rel="canonical">
-<meta content="https://wallet.trinityfx.org" property="og:url">
-<meta content="https://wallet.trinityfx.org" name="twitter:url">
+<meta property="og:title" content="wallet.akroma.io - Akroma Web Wallet">
+<meta property="og:site_name" content="wallet.akroma.io - Akroma Web Wallet">
+<meta name="twitter:title" content="wallet.akroma.io - Akroma Web Wallet">
+<meta name="apple-mobile-web-app-title" content="wallet.akroma.io - Akroma Web Wallet">
+<link href="https://wallet.akroma.io" rel="canonical">
+<meta content="https://wallet.akroma.io" property="og:url">
+<meta content="https://wallet.akroma.io" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
-<meta name="description" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
-<meta property="og:description"  content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
-<meta name="twitter:description" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
+<meta name="description" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
+<meta property="og:description"  content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
+<meta name="twitter:description" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
 
@@ -42,34 +42,34 @@
 
 
 <!-- <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" /> -->
-<meta name="apple-mobile-web-app-title" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.">
-<meta name="application-name" content="Trinity Web Wallet">
+<meta name="apple-mobile-web-app-title" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
+<meta name="application-name" content="Akroma Web Wallet">
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
 <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 
-<meta property="og:url" content="https://wallet.trinityfx.org" />
-<meta property="og:title" content="Trinity Web Wallet. Interact with the Trinity blockchain easily & securely." />
+<meta property="og:url" content="https://wallet.akroma.io" />
+<meta property="og:title" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely." />
 <meta property="og:type" content="website">
-<meta property="og:image" content="/images/trinity.jpg" />
-<meta name="twitter:image" content="/images/trinity.jpg">
+<meta property="og:image" content="/images/Akroma.jpg" />
+<meta name="twitter:image" content="/images/Akroma.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@trinityfxorg">
-<meta name="twitter:creator" content="@trinityfxorg">
+<meta name="twitter:site" content="@Akromafxorg">
+<meta name="twitter:creator" content="@Akromafxorg">
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
 "@type" : "Organization",
-"name" : "Trinity Web Wallet",
+"name" : "Akroma Web Wallet",
 "legalName" : "",
-"url" : "https://wallet.trinityfx.org/"],
-"logo" : "https://wallet.trinityfx.org/images/trinity.jpg",
-"description": "Trinity Web Wallet. Interact with the Trinity blockchain easily & securely.",
+"url" : "https://wallet.akroma.io/"],
+"logo" : "https://wallet.akroma.io/images/Akroma.jpg",
+"description": "Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.",
 "sameAs" : [
-  "https://wallet.trinityfx.org/",
-  "https://twitter.com/trinityfxorg",
-  "https://medium.com/trinityfx",
-  "https://github.com/trinityfx/trinity-wallet-web",
-  "https://github.com/trinityfx"
+  "https://wallet.akroma.io/",
+  "https://twitter.com/Akromafxorg",
+  "https://medium.com/Akromafx",
+  "https://github.com/Akromafx/Akroma-wallet-web",
+  "https://github.com/Akromafx"
 ]
 }
 </script>
@@ -81,7 +81,7 @@
 @@if (site === 'mew' ) {
   <div class="small announcement annoucement-danger">
     <div class="container">
-      DON'T GET PHISHED, BOOKMARK <a href="https://wallet.trinityfx.org"> https://wallet.trinityfx.org</a>
+      DON'T GET PHISHED, BOOKMARK <a href="https://wallet.akroma.io"> https://wallet.akroma.io</a>
     </div>
   </div>
 }
@@ -89,8 +89,8 @@
 <section class="bg-gradient header-branding">
   <section class="container">
       <a class="brand" href="/" aria-label="Go to homepage">
-        <!-- <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="Trinity Web Wallet" /> -->
-        <h1>Trinity Web Wallet</h1>
+        <!-- <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="Akroma Web Wallet" /> -->
+        <h1>Akroma Web Wallet</h1>
         <p class="small visible-xs">0.0.1</p>
       </a>
    
@@ -198,10 +198,10 @@
   <div class="nav-scroll">
     <ul class="nav-inner">
       <li class="nav-item help">
-        <a href="https://www.trinityfx.org" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.akroma.io" target="_blank" rel="noopener noreferrer">
           <span>
             <strong>
-            Visit TrinityFx.org
+            Visit akroma.io
           </strong>
           </span>
         </a>
@@ -214,7 +214,7 @@
             <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
       </li>
       <li class="nav-item help">
-        <a href="https://github.com/trinityfx/trinity-wallet-web" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Akromafx/Akroma-wallet-web" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>

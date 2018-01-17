@@ -4,8 +4,8 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    TFX: "TFX",
-    Custom: "CUSTOM ETH"
+    AKROMA: "AKROMA",
+    Custom: "CUSTOM"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
 nodes.domainsaleNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
@@ -22,17 +22,17 @@ nodes.customNodeObj = {
     'lib': null
 };
 nodes.nodeList = {
-    'trinity_offical': {
-        'name': 'TFX',
-        'blockExplorerTX': 'https://explorer.trinityfx.org/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://explorer.trinityfx.org/addr/[[address]]',
-        'type': nodes.nodeTypes.TFX,
+    'akroma_offical': {
+        'name': 'AKROMA',
+        'blockExplorerTX': 'https://explorer.akroma.io/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://explorer.akroma.io/addr/[[address]]',
+        'type': nodes.nodeTypes.AKROMA,
         'eip155': true,
         'chainId': 200624,
-        'tokenList': require('./tokens/ethTokens.json'),
-        'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'Trinity Offical',
-        'lib': new nodes.customNode('https://rpc.trinityfx.org', '')
+        'tokenList': require('./tokens/akromaTokens.json'),
+        'abiList': require('./abiDefinitions/akromaAbi.json'),
+        'service': 'Akroma Offical',
+        'lib': new nodes.customNode('https://rpc.akroma.io', '')
     }
 };
 
