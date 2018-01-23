@@ -17,7 +17,7 @@
 
       <p>
         <span>
-          Free, open-source, client-side interface for generating Trinity wallets. 
+          Free, open-source, client-side interface for generating Akroma wallets. 
         </span>
       </p>
       
