@@ -28,7 +28,7 @@ nodes.nodeList = {
         'blockExplorerAddr': 'https://explorer.akroma.io/addr/[[address]]',
         'type': nodes.nodeTypes.AKROMA,
         'eip155': true,
-        'chainId': 200624,
+        'chainId': 200625,
         'tokenList': require('./tokens/akromaTokens.json'),
         'abiList': require('./abiDefinitions/akromaAbi.json'),
         'service': 'Akroma Offical',
