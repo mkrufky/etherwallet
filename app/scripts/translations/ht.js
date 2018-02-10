@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send Ether & Tokens Page',
+EOS_06                          :  'Go to Send Akroma & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -312,9 +312,9 @@ x_TXT                       : 'PAJ  TXT (SAN-KÒD) ',
 x_Wallet                    : 'BOUS ',
 
 /* Header */
-CX_Tagline                  : 'EKSTANSYON CHROME BOUS d\'Ether Open Source JavaScript POU KLIYAN  AN ',
+CX_Tagline                  : 'EKSTANSYON CHROME BOUS d\'Akroma Open Source JavaScript POU KLIYAN  AN ',
 CX_Warning_1                : 'VEYE  POU W’ KA GEN** YON LÒT KOTE POU KENBE DEYÒ** AK TOUT BOUS W’AP JERE LA. GEN ANPIL BAGAY KI KAPAB FÈ W’ PÈDI DONE NIVO CHROME SA,  AK ANKÒ  RETIRE ENSTALASYON AN AK NAN ENSTALE NIVO A. NIVO SA SE YON FASON POU W’ ANTRE FASILMAN NAN BOUS OU YO, **SE PA** YON FASON POU W’ KENBE YO ',
-MEW_Tagline                 : 'BOUS d\'Ether Open Source JavaScript POU KLIYAN AN ',
+MEW_Tagline                 : 'BOUS d\'Akroma Open Source JavaScript POU KLIYAN AN ',
 MEW_Warning_1               : 'TOUJOU BYEN VERIFYE L’URL ANVAN W’ ANTRE NAN BOUS OU A OSWA POU KREYE YON LÒT BOUS. ATANSYON AK FO SIT YO ',
 
 /* Footer */
@@ -425,7 +425,7 @@ BULK_Label_1                : 'KANTITE BOUS KI KA KREYE ',
 BULK_Label_2                : 'KREYE BOUS YO ',
 BULK_SuccessMsg             : 'SIKSÈ ! BOUS OU YO KREYE ',
 
-/* Sending Ether and Tokens */
+/* Sending Akroma and Tokens */
 SEND_addr                   : 'ADRÈS KOTE W’AP VOYE L’ ',
 SEND_amount                 : 'KANTITE W’AP VOYE A ',
 SEND_amount_short           : 'KANTITE ',

@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send Ether & Tokens Page',
+EOS_06                          :  'Go to Send Akroma & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -268,7 +268,7 @@ NAV_AddWallet               : 'Tárca hozzáadása ',
 NAV_GenerateWallet_alt      : 'New Wallet ',
 NAV_GenerateWallet          : 'Tárca generálása ',
 NAV_BulkGenerate            : 'Több tárca generálása ',
-NAV_SendEther               : 'Ether & Tokenek küldése ',
+NAV_SendEther               : 'Akroma & Tokenek küldése ',
 NAV_SendTokens              : 'Tokenek küldése ',
 NAV_Offline                 : 'Offline tranzakció ',
 NAV_DeployContract          : 'Kontraktus Telepítése ',
@@ -284,7 +284,7 @@ NAV_Swap                    : 'Swap ',
 NAV_SignMsg                 : 'Sign Message ',
 
 /* General */
-x_AddessDesc                : 'Your Address can also be known as you `Account #` or your `Public Key`. It is what you share with people so they can send you Ether or Tokens. Find the colorful address icon. Make sure it matches your paper wallet & whenever you enter your address somewhere. Úgy is ismerheted ezt, mint "Számlaszám" vagy "Publikus Kulcs". Ez az amit a partnereidnek küldesz, hogy tudjanak ETH-et küldeni neked. Az oldalsó ikon egyszerű módja a saját címed felismerésének. ',
+x_AddessDesc                : 'Your Address can also be known as you `Account #` or your `Public Key`. It is what you share with people so they can send you Akroma or Tokens. Find the colorful address icon. Make sure it matches your paper wallet & whenever you enter your address somewhere. Úgy is ismerheted ezt, mint "Számlaszám" vagy "Publikus Kulcs". Ez az amit a partnereidnek küldesz, hogy tudjanak ETH-et küldeni neked. Az oldalsó ikon egyszerű módja a saját címed felismerésének. ',
 x_Address                   : 'A Te címed ',
 x_Cancel                    : 'Mégse ',
 x_CSV                       : 'CSV fájl (titkosítatlan) ',
@@ -312,8 +312,8 @@ x_Access                    : 'Access ',
 /* Header */
 MEW_Warning_1               : 'Mindig ellenőrizd az URL-t mielőtt megpróbálod elérni a tárcádat vagy új tárcát hozol létre. Óvakodj az adathalász oldalalaktól! ',
 CX_Warning_1                : 'Győződj meg róla, hogy van **külső adatmentésed** minden tárcáról, amit itt tárolsz. Több dolog is történhet, ami adatvesztést eredményezhet a Chrome Bővítményben, többek között a Bővítmény törlése vagy újratelepítése. A bővítmény egyszerű módja annak, hogy elérd a tárcáidat, de **nem** annak, hogy elmentsd azokat. ',
-MEW_Tagline                 : 'Nyílt forrású JavaScript-alapú, Kliens-oldali Ether Tárca ',
-CX_Tagline                  : 'Nyílt forrású JavaScript-alapú, Kliens-oldali Ether Tárca Chrome Bővítmény ',
+MEW_Tagline                 : 'Nyílt forrású JavaScript-alapú, Kliens-oldali Akroma Tárca ',
+CX_Tagline                  : 'Nyílt forrású JavaScript-alapú, Kliens-oldali Akroma Tárca Chrome Bővítmény ',
 
 /* Footer */
 FOOTER_1                    : 'Egy nyílt forrású, javascript-alapú, kliens-oldali eszköz Ethereum Tárcák létrehozására és tranzakicók végrehajtására. ',
@@ -380,7 +380,7 @@ BULK_Label_1                : 'Generálni kívánt tárcák száma ',
 BULK_Label_2                : 'Tárcák generálása ',
 BULK_SuccessMsg             : 'Sikerült! A tárcáid legenerálódtak. ',
 
-/* Sending Ether and Tokens */
+/* Sending Akroma and Tokens */
 SEND_addr                   : 'Erre a címre ',
 SEND_amount                 : 'Küldendő összeg ',
 SEND_amount_short           : 'Összeg ',
@@ -695,7 +695,7 @@ HELP_3_Desc_8               : 'Ha egy nagyobb összeget szeretnél a tárolni, a
 
 HELP_4_Title                : '4) Hogyan tudok Ethert küldeni az egyik tárcámból egy másikba? ',
 HELP_4_Desc_1               : 'Ha egy nagyobb összeget szeretnél küldeni, előtte mindig próbáld ki a küldést egy kisebb összeggel. Így biztos lehetsz benne, hogy minden jól fog működni. ',
-HELP_4_Desc_2               : 'Menj az "Ether & Tokenek küldése" oldalra. ',
+HELP_4_Desc_2               : 'Menj az "Akroma & Tokenek küldése" oldalra. ',
 HELP_4_Desc_3               : 'Válaszd ki a tárca fájlt -vagy- a privát kulcsot, és nyisd ki a tárcádat. ',
 HELP_4_Desc_4               : 'Ha a tárca titkosított, automatikusan megjelenik egy szövegdoboz. Ide írd be a jelszót. ',
 HELP_4_Desc_5               : 'Kattints a "Tárca feloldása" gombra. ',
@@ -708,7 +708,7 @@ HELP_4_Desc_12              : 'Felugrik egy pop-up, ahol le tudod ellenőrizni a
 HELP_4_Desc_13              : 'A tranzakció el lesz küldve, és megjelenik egy TX Hash. Erre a TX Hash-re kattintva megnézheted a tranzakciót a blokkláncon. ',
 
 HELP_4CX_Title              : '4) Hogyan tudok Ethert küldeni a MyEtherWalet CX-szel? ',
-HELP_4CX_Desc_1             : 'Első lépésként hozzá kell adj egy tárcát. Ha ez megvan, két lehetőséged van: a "GyorsKüldés" funkció a Chrome Bővítmény ikonon, vagy az "Ether & Tokenek küldése" oldal. ',
+HELP_4CX_Desc_1             : 'Első lépésként hozzá kell adj egy tárcát. Ha ez megvan, két lehetőséged van: a "GyorsKüldés" funkció a Chrome Bővítmény ikonon, vagy az "Akroma & Tokenek küldése" oldal. ',
 HELP_4CX_Desc_2             : 'GyorsKüldés: ',
 HELP_4CX_Desc_3             : 'Kattints a Chrome Bővítmény ikonra. ',
 HELP_4CX_Desc_4             : 'Kattints a "GyorsKüldés" gombra. ',
@@ -738,7 +738,7 @@ HELP_5CX_Desc_8             : 'A bővítmény meg kell jelenjen a többi bővít
 
 HELP_7_Title                : '7) How do I send Tokens & add custom tokens? ',
 HELP_7_Desc_0               : '[Ethplorer.io](https://ethplorer.io/) is a great way to explore tokens and find the decimals of a token. ',
-HELP_7_Desc_1               : 'Navigate to the "Ether & Tokenek küldése" page. ',
+HELP_7_Desc_1               : 'Navigate to the "Akroma & Tokenek küldése" page. ',
 HELP_7_Desc_2               : 'Unlock your wallet. ',
 HELP_7_Desc_3               : 'Enter the address you would like to send to in the "To Address:" field. ',
 HELP_7_Desc_4               : 'Enter the amount you would like to send. ',
@@ -756,16 +756,16 @@ HELP_7_Desc_15              : 'The transaction will be submitted. The TX Hash wi
 
 HELP_8_Title                : '8) What happens if your site goes down? ',
 HELP_8_Desc_1               : 'MyEtherWallet is not a web wallet. You don\'t have a login and nothing ever gets saved to our servers. It is simply an interface that allows you interact with the blockchain. ',
-HELP_8_Desc_2               : 'If MyEtherWallet.com goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn\'t have to "get" your Ether out of MyEtherWallet because it\'s not in MyEtherWallet. It\'s in whatever wallet your generated via our site. ',
+HELP_8_Desc_2               : 'If MyEtherWallet.com goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn\'t have to "get" your Akroma out of MyEtherWallet because it\'s not in MyEtherWallet. It\'s in whatever wallet your generated via our site. ',
 HELP_8_Desc_3               : 'You can import your unencrypted private key and your Geth/Mist Format (encrypted) files directly into geth / Ethereum Wallet / Mist very easily now. See question #12 below. ',
 HELP_8_Desc_4               : 'In addition, the likelihood of us taking MyEtherWallet down is slim to none. It costs us almost nothing to maintain as we aren\'t storing any information. If we do take the domain down, it still is, and always will be, publicly available at [https://github.com/kvhnuke/etherwallet](https://github.com/kvhnuke/etherwallet/tree/gh-pages). You can download the ZIP there and run it locally. ',
 
 HELP_8CX_Title              : '8) What happens if MyEtherWallet CX disappears? ',
 HELP_8CX_Desc_1             : 'First, all data is saved on your computer, not our servers. I know it can be confusing, but when you look at the Chrome Extension, you are NOT looking at stuff saved on our servers somewhere - it\'s all saved on your own computer. ',
-HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Ether. See the #2a for how to back up your wallets. ',
+HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Akroma. See the #2a for how to back up your wallets. ',
 HELP_8CX_Desc_3             : 'If for some reason MyEtherWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above. ',
 
-HELP_9_Title                : '9) Is the "Ether & Tokenek küldése" page offline? ',
+HELP_9_Title                : '9) Is the "Akroma & Tokenek küldése" page offline? ',
 HELP_9_Desc_1               : 'No. It needs the internet in order to get the current gas price, nonce of your account, and broadcast the transaction (aka "send"). However, it only sends the signed transaction. Your private key safely stays with you. We also now provide an "Offline Transaction" page so that you can ensure your private keys are on an offline/airgapped computer at all times. ',
 
 HELP_10_Title               : '10) How do I make an offline transaction? ',
@@ -813,13 +813,13 @@ HELP_12_Desc_27             : 'After successful import, delete `nothing_special_
 HELP_12_Desc_28             : 'The next time you open the Ethereum Wallet application, your account will be listed under "Accounts". ',
 
 HELP_13_Title               : '13) What does "Insufficient funds. Account you try to send transaction from does not have enough funds. Required XXXXXXXXXXXXXXXXXXX and got: XXXXXXXXXXXXXXXX." Mean? ',
-HELP_13_Desc_1              : 'This means you do not have enough Ether in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Ether. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Ether you were trying to send (if you were attempting to send Ether). This will give you the amount of Ether you need to send to that account to make the transaction. ',
+HELP_13_Desc_1              : 'This means you do not have enough Akroma in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Akroma. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Akroma you were trying to send (if you were attempting to send Akroma). This will give you the amount of Akroma you need to send to that account to make the transaction. ',
 
 HELP_14_Title               : '14) Some sites randomize (seed) the private key generation via mouse movements. MyEtherWallet.com doesn\'t do this. Is the random number generation for MyEtherWallet safe? ',
 HELP_14_Desc_1              : 'While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren\'t unsafe, it\'s just that we (and tons of other crypto experiments) believe in window.crypto. In addition, MyEtherWallet.com can be used on touch devices. Here\'s a [conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto](https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm) and here is the [the window.crypto w3 spec](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto). ',
 
 HELP_15_Title               : '15) Why hasn\'t the account I just created show up in the blockchain explorer? (ie: etherchain, etherscan) ',
-HELP_15_Desc_1              : 'Accounts will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some Ether to it. ',
+HELP_15_Desc_1              : 'Accounts will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some Akroma to it. ',
 
 HELP_16_Title               : '16) How do I check the balance of my account? ',
 HELP_16_Desc_1              : 'You can use a blockchain explorer like [etherscan.io](https://etherscan.io/). Paste your address into the search bar and it will pull up your address and transaction history. For example, here\'s what our [donation account](https://etherscan.io/address/0x7cb57b5a97eabe94205c07890be4c1ad31e486a8) looks like on etherscan.io ',

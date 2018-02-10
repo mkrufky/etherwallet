@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send Ether & Tokens Page',
+EOS_06                          :  'Go to Send Akroma & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -285,7 +285,7 @@ NAV_YourWallets             : '내 지갑 ',
 
 /* General */
 x_Access                    : '액세스 ',
-x_AddessDesc                : 'Your Address can also be known as you `Account #` or your `Public Key`. It is what you share with people so they can send you Ether or Tokens. Find the colorful address icon. Make sure it matches your paper wallet & whenever you enter your address somewhere. 이것은 자신의 계좌 번호와 공개 키입니다. ETH를 전송하기 위해 필요한 정보입니다. 아이콘은 자신의 주소를 식별합니다. ',
+x_AddessDesc                : 'Your Address can also be known as you `Account #` or your `Public Key`. It is what you share with people so they can send you Akroma or Tokens. Find the colorful address icon. Make sure it matches your paper wallet & whenever you enter your address somewhere. 이것은 자신의 계좌 번호와 공개 키입니다. ETH를 전송하기 위해 필요한 정보입니다. 아이콘은 자신의 주소를 식별합니다. ',
 x_Address                   : '내 주소 ',
 x_Cancel                    : '취소 ',
 x_CSV                       : 'CSV 파일 (암호화되지 않음) ',
@@ -423,7 +423,7 @@ BULK_Label_1                : '생성할 지갑 개수 ',
 BULK_Label_2                : '지갑 생성하기 ',
 BULK_SuccessMsg             : '성공! 당신의 지갑들이 생성되었습니다. ',
 
-/* Sending Ether and Tokens */
+/* Sending Akroma and Tokens */
 SEND_addr                   : '받는 주소 ',
 SEND_amount                 : '보낼 수량 ',
 SEND_amount_short           : '보낼 수량 ',

@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send Ether & Tokens Page',
+EOS_06                          :  'Go to Send Akroma & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -381,7 +381,7 @@ BULK_Label_1                : 'Αριθμός πορτοφολιών για δη
 BULK_Label_2                : 'Δημιουργία πορτοφολιών ',
 BULK_SuccessMsg             : 'Επιτυχία! Τα πορτοφόλια σας δημιουργήθηκαν. ',
 
-/* Sending Ether and Tokens */
+/* Sending Akroma and Tokens */
 SEND_addr                   : 'Προς διεύθυνση ',
 SEND_amount                 : 'Ποσό για αποστολή ',
 SEND_amount_short           : 'Ποσό ',
@@ -675,7 +675,7 @@ HELP_1_Desc_5               : 'Το πορτοφόλι σας δημιουργή
 
 HELP_2a_Desc_1              : 'Θα πρέπει πάντα να δημιουργείτε εξωτερικά αντίγραφα ασφαλείας του πορτοφολιού σας και σε πολλαπλές φυσικές τοποθεσίες - όπως σε μια μονάδα USB ή/και σε ένα κομμάτι χαρτί. ',
 HELP_2a_Desc_2              : 'Αποθηκεύστε τη διεύθυνση. Μπορείτε να την κρατήσετε για τον εαυτό σας ή να τη μοιραστείτε με άλλους. Με αυτόν τον τρόπο, οι άλλοι μπορούν να μεταφέρουν αιθέρα σε εσάς. ',
-HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys: ',
+HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Akroma to send it! There are 3 types of private keys: ',
 HELP_2a_Desc_4              : 'Τοποθετήστε τη διεύθυνση, αντίγραφα του ιδιωτικού κλειδιού και το αρχείο PDF του χάρτινου πορτοφολιού σας σε ένα φάκελο. Αποθηκεύστε τον στον υπολογιστή σας και μια μονάδα USB. ',
 HELP_2a_Desc_5              : 'Εκτυπώστε το πορτοφόλι εάν έχετε εκτυπωτή. Διαφορετικά, σημειώστε το ιδιωτικό σας κλειδί και τη διεύθυνση σε ένα κομμάτι χαρτί. Αποθηκεύστε το σε ασφαλή τοποθεσία, σε ξεχωριστό μέρος από τον υπολογιστή και τη μονάδα USB. ',
 HELP_2a_Desc_6              : 'Λάβετε υπόψιν σας ότι στόχος είναι να αποτρέψετε την απώλεια των κλειδιών και του συνθηματικού από απώλεια ή βλάβη του σκληρού σας δίσκου, ή της μονάδας USB, ή του χαρτιού. Πρέπει επίσης να έχετε κατά νου τη φυσική απώλεια / καταστροφή μιας ολόκληρης περιοχής (σκεφτείτε πυρκαγιά ή πλημμύρα). ',
@@ -714,7 +714,7 @@ HELP_4_Desc_11              : 'Click the blue "Send Transaction" button below th
 HELP_4_Desc_12              : 'A pop-up will appear. Verify that the amount and the address you are sending to are correct. Then click "Yes, I am sure! Make transaction." button. ',
 HELP_4_Desc_13              : 'The transaction will be submitted. The TX Hash will display. You can click that TX Hash to see it on the blockchain. ',
 
-HELP_4CX_Title              : '4) How do I send Ether using MyEtherWallet CX? ',
+HELP_4CX_Title              : '4) How do I send Akroma using MyEtherWallet CX? ',
 HELP_4CX_Desc_1             : 'Πρώτα, πρέπει να προσθέσετε ένα πορτοφόλι. Άπαξ και το κάνετε αυτό έχετε δύο επιλογές: τη λειτουργία «QuickSend» από το εικονίδιο της επέκτασης στο Chrome ή από τη σελίδα «Αποστολή αιθέρα και μαρκών». ',
 HELP_4CX_Desc_2             : 'QuickSend: ',
 HELP_4CX_Desc_3             : 'Click the Chrome Extension Icon. ',
@@ -769,7 +769,7 @@ HELP_8_Desc_4               : 'Επιπρόσθετα, η πιθανότητα �
 
 HELP_8CX_Title              : '8) What happens if MyEtherWallet CX disappears? ',
 HELP_8CX_Desc_1             : 'First, all data is saved on your computer, not our servers. I know it can be confusing, but when you look at the Chrome Extension, you are NOT looking at stuff saved on our servers somewhere - it\'s all saved on your own computer. ',
-HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Ether. See the #2a for how to back up your wallets. ',
+HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Akroma. See the #2a for how to back up your wallets. ',
 HELP_8CX_Desc_3             : 'If for some reason MyEtherWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above. ',
 
 HELP_9_Title                : '9) Is the «Αποστολή αιθέρα και μαρκών» page offline? ',
@@ -820,7 +820,7 @@ HELP_12_Desc_27             : 'After successful import, delete `nothing_special_
 HELP_12_Desc_28             : 'The next time you open the Ethereum Wallet application, your account will be listed under "Accounts". ',
 
 HELP_13_Title               : '13) What does "Insufficient funds. Account you try to send transaction from does not have enough funds. Required XXXXXXXXXXXXXXXXXXX and got: XXXXXXXXXXXXXXXX." Mean? ',
-HELP_13_Desc_1              : 'This means you do not have enough Ether in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Ether. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Ether you were trying to send (if you were attempting to send Ether). This will give you the amount of Ether you need to send to that account to make the transaction. ',
+HELP_13_Desc_1              : 'This means you do not have enough Akroma in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Akroma. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Akroma you were trying to send (if you were attempting to send Akroma). This will give you the amount of Akroma you need to send to that account to make the transaction. ',
 
 HELP_14_Title               : '14) Ορισμένοι ιστότοποι τυχαιοποιούν την παραγωγή του ιδιωτικού κλειδιού μέσω κινήσεων του ποντικιού. Το MyEtherWallet.com δεν το κάνει αυτό. Είναι ασφαλής η παραγωγή τυχαίων αριθμών για το MyEtherWallet; ',
 HELP_14_Desc_1              : 'Ενώ αυτό το πράγμα με τις κινήσεις του ποντικιού είναι έξυπνο και καταλαβαίνουμε γιατί αρέσει στους περισσότερους ανθρώπους, η πραγματικότητα όμως είναι ότι το window.crypto εξασφαλίζει περισσότερη εντροπία από τις κινήσεις του ποντικιού σας. Δεν είναι ότι οι κινήσεις του ποντικιού δεν είναι ασφαλείς, είναι ότι εμείς (και οι τόνοι πειραμάτων κρυπτογράφησης) πιστεύουμε στο window.crypto. Επιπλέον, το MyEtherWallet.com μπορεί να χρησιμοποιηθεί σε συσκευές αφής. Εδώ είναι μια [συζήτηση μεταξύ ενός θυμωμένου redditor και του Vitalik Buterin σχετικά με τις κινήσεις του ποντικιού έναντι του window.crypto](https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm) και εδώ είναι οι [προδιαγραφές w3 του window.crypto](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto). ',
