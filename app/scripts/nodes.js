@@ -24,8 +24,8 @@ nodes.customNodeObj = {
 nodes.nodeList = {
     'akroma_offical': {
         'name': 'AKROMA',
-        'blockExplorerTX': 'https://explorer.akroma.io/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://explorer.akroma.io/addr/[[address]]',
+        'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',
+        'blockExplorerAddr': 'https://akroma.io/explorer/address/[[address]]',
         'type': nodes.nodeTypes.AKROMA,
         'eip155': true,
         'chainId': 200625,
