@@ -39,7 +39,10 @@ uiFuncs.isTxDataValid = function (txData) {
 
 
  */
-const removeChainIdIfCLO = (chainId) => parseInt(chainId) === 820 ? null : chainId;
+const removeChainIdIfUnwanted = (chainId) => {
+  var cId = parseInt(chainId);
+  return (cId === 820 || cId === 3125659152) ? null : chainId;
+}
 
 
 uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
@@ -65,7 +68,7 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
     }
 
 
-    const chainId = removeChainIdIfCLO(rawTx.chainId);
+    const chainId = removeChainIdIfUnwanted(rawTx.chainId);
 
 
     TrezorConnect.signEthereumTx(
@@ -232,7 +235,7 @@ uiFuncs.genTxWithInfo = function (data, callback) {
                     error: error
                 });
 
-            } else if (rawTx.chainId === 820) {
+            } else if (rawTx.chainId === 820 || rawTx.chainId === 3125659152) {
 
                 EIP155Supported = false;
 
