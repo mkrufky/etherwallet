@@ -54,6 +54,18 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
             return;
         }
 
+        // thanks to ethminer / hackmod
+        // recalc v
+        let v = rawTx.chainId * 2 + 35;
+        if ((result.v - (v & 0xffffffff)) > 0) {
+            v += 1;
+        }
+        console.log('Signature V (recalculated):', v);
+        result.v = v;
+        console.log('Signature R component:', result.r); // bytes
+        console.log('Signature S component:', result.s); // bytes
+        console.log(result);
+
         rawTx.v = "0x" + ethFuncs.decimalToHex(result.v);
         rawTx.r = "0x" + result.r;
         rawTx.s = "0x" + result.s;
