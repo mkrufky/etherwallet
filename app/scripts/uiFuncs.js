@@ -29,6 +29,13 @@ uiFuncs.isTxDataValid = function (txData) {
 
 }
 
+const vReCalc = (chainId, preV) => {
+    let v = chainId * 2 + 35;
+    if ((preV - (v & 0xffffffff)) > 0) {
+        v += 1;
+    }
+    return v;
+}
 
 uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
     var localCallback = function (result) {
@@ -41,6 +48,8 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
             }
             return;
         }
+
+        result.v = vReCalc(rawTx.chainId, result.v);
 
         rawTx.v = "0x" + ethFuncs.decimalToHex(result.v);
         rawTx.r = "0x" + result.r;
@@ -68,7 +77,7 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
 uiFuncs.signTxLedger = function (app, eTx, rawTx, txData, old, callback) {
 
 
-    eTx.raw[6] = Buffer.from([rawTx.chainId]);
+    eTx.raw[6] = rawTx.chainId;
 
 
     eTx.raw[7] = eTx.raw[8] = 0;
@@ -85,7 +94,10 @@ uiFuncs.signTxLedger = function (app, eTx, rawTx, txData, old, callback) {
             });
             return;
         }
-        rawTx.v = "0x" + result['v'];
+
+        result.v = vReCalc(rawTx.chainId, result.v);
+
+        rawTx.v = "0x" + result['v'].toString(16);
         rawTx.r = "0x" + result['r'];
         rawTx.s = "0x" + result['s'];
         eTx = new ethUtil.Tx(rawTx);
