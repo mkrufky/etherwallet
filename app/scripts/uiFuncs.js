@@ -95,7 +95,7 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
 uiFuncs.signTxLedger = function (app, eTx, rawTx, txData, old, callback) {
 
 
-    eTx.raw[6] = Buffer.from([rawTx.chainId]);
+    eTx.raw[6] = rawTx.chainId;
 
 
     eTx.raw[7] = eTx.raw[8] = 0;
@@ -112,7 +112,20 @@ uiFuncs.signTxLedger = function (app, eTx, rawTx, txData, old, callback) {
             });
             return;
         }
-        rawTx.v = "0x" + result['v'];
+
+        // inspired by ethminer / hackmod's trezor v recalc - FIXME: DRY
+        // recalc v
+        let v = rawTx.chainId * 2 + 35;
+        if ((result.v - (v & 0xffffffff)) > 0) {
+            v += 1;
+        }
+        console.log('Signature V (recalculated):', v);
+        result.v = v;
+        console.log('Signature R component:', result.r); // bytes
+        console.log('Signature S component:', result.s); // bytes
+        console.log(result);
+
+        rawTx.v = "0x" + result['v'].toString(16);
         rawTx.r = "0x" + result['r'];
         rawTx.s = "0x" + result['s'];
         eTx = new ethUtil.Tx(rawTx);
