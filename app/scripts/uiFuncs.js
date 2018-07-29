@@ -41,6 +41,14 @@ uiFuncs.isTxDataValid = function (txData) {
  */
 const removeChainIdIfCLO = (chainId) => parseInt(chainId) === 820 ? null : chainId;
 
+const vReCalc = (chainId, preV) => {
+    let v = chainId * 2 + 35;
+    if ((preV - (v & 0xffffffff)) > 0) {
+        v += 1;
+    }
+    return v;
+}
+
 
 uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
     var localCallback = function (result) {
@@ -54,17 +62,7 @@ uiFuncs.signTxTrezor = function (rawTx, txData, callback) {
             return;
         }
 
-        // thanks to ethminer / hackmod
-        // recalc v
-        let v = rawTx.chainId * 2 + 35;
-        if ((result.v - (v & 0xffffffff)) > 0) {
-            v += 1;
-        }
-        console.log('Signature V (recalculated):', v);
-        result.v = v;
-        console.log('Signature R component:', result.r); // bytes
-        console.log('Signature S component:', result.s); // bytes
-        console.log(result);
+        result.v = vReCalc(rawTx.chainId, result.v);
 
         rawTx.v = "0x" + ethFuncs.decimalToHex(result.v);
         rawTx.r = "0x" + result.r;
@@ -113,17 +111,7 @@ uiFuncs.signTxLedger = function (app, eTx, rawTx, txData, old, callback) {
             return;
         }
 
-        // inspired by ethminer / hackmod's trezor v recalc - FIXME: DRY
-        // recalc v
-        let v = rawTx.chainId * 2 + 35;
-        if ((result.v - (v & 0xffffffff)) > 0) {
-            v += 1;
-        }
-        console.log('Signature V (recalculated):', v);
-        result.v = v;
-        console.log('Signature R component:', result.r); // bytes
-        console.log('Signature S component:', result.s); // bytes
-        console.log(result);
+        result.v = vReCalc(rawTx.chainId, result.v);
 
         rawTx.v = "0x" + result['v'].toString(16);
         rawTx.r = "0x" + result['r'];
