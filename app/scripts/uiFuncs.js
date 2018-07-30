@@ -39,7 +39,7 @@ uiFuncs.isTxDataValid = function (txData) {
 
 
  */
-const removeChainIdIfCLO = (chainId) => parseInt(chainId) === 820 ? null : chainId;
+const removeChainIdIfCLO = (chainId) => chainId;
 
 const vReCalc = (chainId, preV) => {
     let v = chainId * 2 + 35;
@@ -247,7 +247,7 @@ uiFuncs.genTxWithInfo = function (data, callback) {
 
             } else if (rawTx.chainId === 820) {
 
-                EIP155Supported = false;
+                EIP155Supported = true;
 
             } else {
 
