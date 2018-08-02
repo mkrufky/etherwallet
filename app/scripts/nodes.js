@@ -23,19 +23,6 @@ nodes.customNodeObj = {
     'lib': null
 };
 nodes.nodeList = {
-    'akroma': {
-        'name': 'AKA',
-        'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',
-        'blockExplorerAddr': 'https://akroma.io/explorer/address/[[address]]',
-        'type': nodes.nodeTypes.AKROMA,
-        'eip155': true,
-        'chainId': 200625,
-        'tokenList': require('./tokens/akromaTokens.json'),
-        'abiList': require('./abiDefinitions/akromaAbi.json'),
-        'estimateGas': true,
-        'service': 'akroma.io',
-        'lib': new nodes.customNode('https://rpc.akroma.io', '')
-    },
     'akroma_offical': {
         'name': 'AKROMA',
         'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',

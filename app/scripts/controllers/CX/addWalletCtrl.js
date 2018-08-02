@@ -36,6 +36,9 @@ var addWalletCtrl = function($scope, $sce) {
     $scope.$watch('walletType', function() {
         if ($scope.walletType == "ledger") {
             switch ($scope.nodeType) {
+                case nodes.nodeTypes.AKA:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
+                    break;
                 case nodes.nodeTypes.ETH:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
                     break;
@@ -47,6 +50,9 @@ var addWalletCtrl = function($scope, $sce) {
             }
         } else if ($scope.walletType == "trezor") {
             switch ($scope.nodeType) {
+                case nodes.nodeTypes.AKA:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
+                    break;
                 case nodes.nodeTypes.ETH:
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
                     break;
@@ -60,7 +66,7 @@ var addWalletCtrl = function($scope, $sce) {
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
             }
         } else {
-            $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
+            $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
         }
     });
     $scope.onHDDPathChange = function(password = $scope.mnemonicPassword) {
