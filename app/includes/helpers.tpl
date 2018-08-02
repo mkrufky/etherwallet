@@ -1,11 +1,11 @@
 <div class="" ng-controller="helpersCtrl">
 
   <h1>
-    Convert Ethererum Units (e.g. Ether <-> Wei)
+    Convert Akroma Units (e.g. Akroma <-> Wei)
   </h1>
 
   <h2 class="p">
-    Ether Wei Converter
+    Akroma Wei Converter
   </h2>
 
   <section class="mono">
@@ -347,7 +347,7 @@
   <br /><br /><br />
 
 
-  <h1> Ether Unit Reference Guide
+  <h1> Akroma Unit Reference Guide
   </h1>
   <table class="table table-striped mono">
     <tr>
