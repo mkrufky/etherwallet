@@ -1,4 +1,4 @@
-
+<!--email_off-->
 <!DOCTYPE html>
 <html lang="en" ng-app="mewApp">
 <head>
@@ -94,10 +94,10 @@
    
     <div class="tagline">
 
-    <span class="hidden-xs">0.0.1</span>
+    <span class="hidden-xs">3.21.18</span>
 
     <span class="dropdown dropdown-lang" ng-cloak>
-      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle  btn btn-white" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
+      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
       <ul class="dropdown-menu" ng-show="dropdown">
         <li><a ng-class="{true:'active'}[curLang=='Català']"          ng-click="changeLanguage('ca','Català'         )"> Català          </a></li>
         <li><a ng-class="{true:'active'}[curLang=='Deutsch']"         ng-click="changeLanguage('de','Deutsch'        )"> Deutsch         </a></li>
@@ -189,9 +189,17 @@
 
     </div>
   </section>
+  <p class="dropdown-gas__msg"
+     ng-show="gasPriceMsg"
+     ng-hide="ajaxReq.type!='ETH'">
+    The network is really full right now. Check
+    <a href="https://ethgasstation.info/"
+       target="_blank" rel="noopener noreferrer">Eth Gas Station</a>
+    for gas price to use.
+  </p>
 </section>
 
-<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing" >
+<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing">
   <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
   <div class="nav-scroll">
     <ul class="nav-inner">
@@ -284,7 +292,7 @@
             <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
-            <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
+            <label ng-show="customNode.options == 'cus'"><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>
 
           <div class="clearfix col-sm-6 col-sm-offset-6" ng-show="customNode.eip155">
@@ -532,6 +540,28 @@
   <section class="row">
     <div class="form-group col-xs-12">
       <label>
+        Start Auction And Bid Data
+      </label>
+      <input class="form-control" type="text" ng-model="startAndBidAuctionData" readonly />
+      <p>
+        To:
+        <code>0x6090a6e47849629b7245dfa1ca21d94cd15878ef</code>
+        &nbsp;&middot;&nbsp;
+        Amount:
+        <code>0</code>
+        &nbsp;&middot;&nbsp;
+        Gas Limit:
+        <code>200000</code>
+        &nbsp;&middot;&nbsp;
+        Data:
+        <code>[ABOVE]</code>
+      </p>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="form-group col-xs-12">
+      <label>
         New Bid Data
         <small>If your reveals aren't working, this is the string that needs to match your bid data on Etherscan)</small>
     </label>
@@ -590,7 +620,7 @@
 
 
   <h1>
-    Convert Decimal to Hexidecimal and Hex to Decimal
+    Convert Decimal to Hexadecimal and Hex to Decimal
   </h1>
   <div class="form-group">
     <label>
@@ -1045,3 +1075,4 @@
 </body>
 </html>
 
+<!--/email_off-->
