@@ -17,7 +17,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         dPath: '',
         defaultDPath:      "m/44'/60'/0'/0",       // first address: m/44'/60'/0'/0/0
         alternativeDPath:  "m/44'/60'/0'",         // first address: m/44'/60'/0/0
-        customDPath:       "m/44'/60'/1'/0",       // first address: m/44'/60'/1'/0/0
+        customDPath:       "m/44'/200625'/1'/0",   // first address: m/44'/200625'/1'/0/0
         ledgerPath:        "m/44'/60'/0'",         // first address: m/44'/60'/0/0
         ledgerClassicPath: "m/44'/60'/160720'/0'", // first address: m/44'/60'/160720'/0/0
         trezorTestnetPath: "m/44'/1'/0'/0",        // first address: m/44'/1'/0'/0/0
@@ -48,7 +48,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     $scope.setdPath = function() {
         if ($scope.walletType == "ledger") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.AKA:
+                case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
                     break;
                 case nodes.nodeTypes.ETH:
@@ -71,7 +71,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             }
         } else if ($scope.walletType == "trezor") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.AKA:
+                case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
                     break;
                 case nodes.nodeTypes.ETH:
@@ -116,8 +116,6 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                 case nodes.nodeTypes.EOSC:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwEOSClassicPath;
                     break;
-                case nodes.nodeTypes.Akroma:
-                    $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
                 case nodes.nodeTypes.ESN:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwESNetworkPath;
                     break;
@@ -126,7 +124,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
             }
         } else {
           switch ($scope.nodeType) {
-                case nodes.nodeTypes.AKA:
+                case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
                     break;
                 case nodes.nodeTypes.ETH:
