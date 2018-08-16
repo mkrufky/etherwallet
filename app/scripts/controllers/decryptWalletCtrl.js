@@ -35,6 +35,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         goPath:            "m/44'/6060'/0'/0",     // first address: m/44'/6060'/0'/0/0
         hwEOSClassicPath:  "m/44'/2018'/0'/0",     // first address: m/44'/2018'/0'/0/0
         hwAkromaPath:      "m/44'/200625'/0'/0",   // first address: m/44'/200625'/0'/0/0
+        hwAtheiosPath:     "m/44'/1620'/0'/0",     // first address: m/44'/1620'/0'/0/0
         hwESNetworkPath:   "m/44'/31102'/0'/0",    // first address: m/44'/31102'/0'/0/0
         hwEther1Path:      "m/44'/1313114'/0'/0",  // first address: m/44'/1313114'/0'/0/0
     };
@@ -67,6 +68,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                     break;
                 case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
+                    break;
+                case nodes.nodeTypes.ATH:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwAtheiosPath;
                     break;
                 case nodes.nodeTypes.PIRL:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwPirlPath;
@@ -124,6 +128,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                 case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
                     break;
+                case nodes.nodeTypes.ATH:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwAtheiosPath;
+                    break;
                 case nodes.nodeTypes.ESN:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwESNetworkPath;
                     break;
@@ -170,6 +177,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                     break;
                 case nodes.nodeTypes.AKROMA:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwAkromaPath;
+                    break;
+                case nodes.nodeTypes.ATH:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwAtheiosPath;
                     break;
                 case nodes.nodeTypes.ESN:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwESNetworkPath;
