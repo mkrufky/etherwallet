@@ -18,7 +18,7 @@
             <label translate="NODE_Name">Node Name</label>
             <input class="form-control"
                    type="text"
-                   placeholder="My ETH Node"
+                   placeholder="My ATH Node"
                    ng-model="customNode.name"
                    ng-class="Validator.isAlphaNumericSpace(customNode.name) ? 'is-valid' : 'is-invalid'">
           </div>
@@ -30,7 +30,7 @@
 
           <div class="clearfix col-xs-3">
             <label class="NODE_Port">Port</label>
-            <input class="form-control" type="text" placeholder="8545" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
+            <input class="form-control" type="text" placeholder="8696" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
           </div>
 
           <div class="clearfix col-xs-12">
@@ -48,11 +48,11 @@
           </div>
 
           <div class="clearfix col-xs-12 radio">
-            <label><input name="options" type="radio" ng-model="customNode.options" value="eth"> ETH </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="etc"> ETC </label>
+            <label><input name="options" type="radio" ng-model="customNode.options" value="ath"> ATH </label>
+            <!--<label><input name="options" type="radio" ng-model="customNode.options" value="etc"> ETC </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="rop"> Ropsten </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
+            <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>-->
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
             <label ng-show="customNode.options == 'cus'"><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>

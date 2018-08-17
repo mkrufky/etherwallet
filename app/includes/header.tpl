@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MyEtherWallet.com</title>
-<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
+<title>wallet.atheios.com</title>
+<meta property="og:title" content="wallet.atheios.com: Your Key to Ethereum">
+<meta property="og:site_name" content="wallet.atheios.com: Your Key to Ethereum">
+<meta name="twitter:title" content="wallet.atheios.com: Your Key to Ethereum">
+<meta name="apple-mobile-web-app-title" content="wallet.atheios.com: Your Key to Ethereum">
 <link href="https://www.myetherwallet.com" rel="canonical">
 <meta content="https://www.myetherwallet.com" property="og:url">
 <meta content="https://www.myetherwallet.com" name="twitter:url">
@@ -32,7 +32,7 @@
 <meta name="theme-color" content="#1d6986">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
 <meta property="og:url" content="https://www.myetherwallet.com" />
-<meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
+<meta property="og:title" content="wallet.atheios.com  &middot; Your Key to Ethereum" />
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
 <meta property="og:image" content="/images/myetherwallet-logo.png" />
@@ -56,7 +56,7 @@
   "contactType" : "customer service"
 }],
 "logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
-"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
+"description": "wallet.atheios.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
 "sameAs" : [
   "https://www.myetherwallet.com/",
   "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
@@ -78,17 +78,7 @@
 @@if (site === 'mew' ) {
   <div class="small announcement annoucement-danger">
     <div class="container">
-      DON'T GET PHISHED, please! 🎣 Thank you! 🤗
-      <br />
-      1. BOOKMARK <a href="https://www.myetherwallet.com"> MYETHERWALLET.COM </a>
-      <span class="hidden-xs">
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        2. INSTALL <a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer">EAL</a>
-        or
-        <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">MetaMask</a>
-        or
-        <a href="https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige" target="_blank" rel="noopener noreferrer">Cryptonite</a>
-      </span>
+      DON'T GET PHISHED, please! 🎣 Thank you! 🤗 BOOKMARK <a href="https://wallet.atheios.com"> wallet.atheios.com </a>
     </div>
   </div>
 }
@@ -97,13 +87,13 @@
   <section class="container">
     @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/logo-atheios.png"   height="35px" width="273px" alt="Atheios" />
         <p class="small visible-xs">3.21.21</p>
       </a>
     }
     @@if (site === 'cx'  ) {
       <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
-        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/logo-atheios.png" height="35px" width="273px" alt="Atheios" />
         <p class="small visible-xs">3.21.21</p>
       </a>
     }
@@ -236,13 +226,13 @@
             <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
       </li>
       }
-      <li class="nav-item help">
+      <!--<li class="nav-item help">
         <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>
         </a>
-      </li>
+      </li>-->
     </ul>
   </div>
   <a aria-hidden="true"

@@ -35,7 +35,7 @@
     <!-- Ledger -->
     <label aria-flowto="aria3"
            class="radio"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ESN'||ajaxReq.type=='AKROMA'||ajaxReq.type=='PIRL'||ajaxReq.type=='ETHO'||ajaxReq.type=='ATH'">
+           ng-show="ajaxReq.type=='ATH'">
       <input aria-flowto="aria3"
              type="radio"
              aria-label="Ledger Hardware Wallet"
@@ -44,7 +44,7 @@
       Ledger Wallet
     </label>
 
-    <!-- TREZOR -->
+    <!-- TREZOR 
     <label class="radio"
            aria-flowto="aria4"
            ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='GO'||ajaxReq.type=='EOSC'||ajaxReq.type=='AKROMA'||ajaxReq.type=='ESN'">
@@ -54,9 +54,9 @@
              ng-model="walletType"
              value="trezor" />
       TREZOR
-    </label>
+    </label>-->
 
-    <!-- Digital Bitbox -->
+    <!-- Digital Bitbox 
     <label aria-flowto="aria5"
            class="radio"
            ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
@@ -66,9 +66,9 @@
              ng-model="walletType"
              value="digitalBitbox"/>
       Digital Bitbox
-    </label>
+    </label>-->
 
-    <!-- Secalot -->
+    <!-- Secalot 
     <label aria-flowto="aria5"
            class="radio"
            ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
@@ -78,7 +78,7 @@
              ng-model="walletType"
              value="secalot"/>
       Secalot
-    </label>
+    </label>-->
 
     <!-- Keystore / JSON File -->
     <label aria-flowto="aria6"
@@ -132,7 +132,7 @@
       </a>
     </label>
 
-    <!-- Parity -->
+    <!-- Parity 
     <label aria-flowto="aria9"
            class="radio"
            style="display: none;"
@@ -145,7 +145,7 @@
       <span translate="x_ParityPhrase">
         Parity Phrase
       </span>
-    </label>
+    </label>-->
 
     <label class="radio">
       &nbsp;
@@ -524,7 +524,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
+        If you must, please <u>double-check the URL</u>. It should say <code>https://wallet.atheios.com</code>.
       </div>
       <br />
       <div class="form-group">
@@ -600,7 +600,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
+        If you must, please <u>double-check the URL</u>. It should say <code>https://wallet.atheios.com</code>.
       </div>
       <br />
       <div class="form-group">
@@ -681,7 +681,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
+        If you must, please <u>double-check the URL</u>. It should say <code>https://wallet.atheios.com</code>.
       </div>
       <br />
       <div class="form-group">
@@ -769,7 +769,7 @@
           </h4>
 
           <p class="alert alert-danger"
-             ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='GO'||ajaxReq.type=='EOSC'||ajaxReq.type=='POA'||ajaxReq.type=='AKROMA'||ajaxReq.type=='ESN'||ajaxReq.type=='PIRL'||ajaxReq.type=='ETHO'||ajaxReq.type=='ATH'">
+             ng-hide="ajaxReq.type=='ATH'">
                 We do not know the correct path for this network.
                 <a href="https://github.com/kvhnuke/etherwallet/issues"
                    target="_blank"
@@ -781,7 +781,7 @@
 
           <section class="row">
 
-            <div class="col-sm-4">
+            <!--<div class="col-sm-4">
               <label class="radio small">
                 <input aria-describedby="Path: Jaxx, Metamask, Exodus, imToken - {{HDWallet.defaultDPath}}"
                        ng-change="onHDDPathChange()"
@@ -1043,7 +1043,7 @@
                   Network: Ether-1 (ETHO)
                 </p>
               </label>
-            </div>
+            </div>-->
             
             <div class="col-sm-4">
               <label class="radio small">
@@ -1059,7 +1059,7 @@
                </label>
             </div>
             
-            <div class="col-sm-4">
+            <!--<div class="col-sm-4">
               <label class="radio small">
                 <p class="small"><strong>
                   Your Custom Path
@@ -1075,7 +1075,7 @@
                       ng-change="onCustomHDDPathChange()"
                       style="float: right;margin: 0 0 .5rem;" />
               </label>
-            </div>
+            </div>-->
           </section>
 
 

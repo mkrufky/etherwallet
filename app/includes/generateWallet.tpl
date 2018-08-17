@@ -68,7 +68,7 @@
         <li>
           <p>
             <strong>
-              Ledger / TREZOR / Digital Bitbox / Secalot
+              Ledger
             </strong>:
             <span translate="GEN_Help_1">
               Use your
@@ -83,7 +83,7 @@
         </li>
       </ul>
 
-      <ul>
+      <!--<ul>
         <li>
           <p>
             <strong>
@@ -100,7 +100,7 @@
             </span>
           </p>
         </li>
-      </ul>
+      </ul>-->
 
       <ul>
         <li>
