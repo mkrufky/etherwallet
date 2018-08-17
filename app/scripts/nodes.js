@@ -33,7 +33,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/akromaTokens.json'),
         'abiList': require('./abiDefinitions/akromaAbi.json'),
         'estimateGas': true,
-        'service': 'Akroma Offical',
+        'service': 'rpc.akroma.io',
         'lib': new nodes.customNode('https://rpc.akroma.io', '')
     },
     'akroma_remote': {
@@ -46,7 +46,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/akromaTokens.json'),
         'abiList': require('./abiDefinitions/akromaAbi.json'),
         'estimateGas': true,
-        'service': 'Akroma Remote',
+        'service': 'remote.akroma.io',
         'lib': new nodes.customNode('https://remote.akroma.io', '')
     }
 };
