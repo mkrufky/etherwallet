@@ -66,8 +66,10 @@
     "gulp-template": "^4.0.0",
     "gulp-uglify": "^2.0.1",
     "gulp-zip": "^4.0.0",
+    "natives": "^1.1.4",
     "npm": "^4.5.0",
     "run-sequence": "^1.2.2",
+    "sha3": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "xss-filters": "^1.2.7"

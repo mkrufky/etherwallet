@@ -4,7 +4,7 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    ETH: "ETH",
+    // ETH: "ETH",
     // ETC: "ETC",
     // Ropsten: "ROPSTEN ETH",
     // Kovan: "KOVAN ETH",
