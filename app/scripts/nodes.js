@@ -23,19 +23,6 @@ nodes.customNodeObj = {
 	lib: null
 };
 nodes.nodeList = {
-    'akroma_offical': {
-        'name': 'AKROMA',
-        'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',
-        'blockExplorerAddr': 'https://akroma.io/explorer/address/[[address]]',
-        'type': nodes.nodeTypes.AKROMA,
-        'eip155': true,
-        'chainId': 200625,
-        'tokenList': require('./tokens/akromaTokens.json'),
-        'abiList': require('./abiDefinitions/akromaAbi.json'),
-        'estimateGas': true,
-        'service': 'rpc.akroma.io',
-        'lib': new nodes.customNode('https://rpc.akroma.io', '')
-    },
     'akroma_remote': {
         'name': 'AKROMA',
         'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',
@@ -48,6 +35,19 @@ nodes.nodeList = {
         'estimateGas': true,
         'service': 'remote.akroma.io',
         'lib': new nodes.customNode('https://remote.akroma.io', '')
+    },
+    'akroma_offical': {
+        'name': 'AKROMA',
+        'blockExplorerTX': 'https://akroma.io/explorer/transaction/[[txHash]]',
+        'blockExplorerAddr': 'https://akroma.io/explorer/address/[[address]]',
+        'type': nodes.nodeTypes.AKROMA,
+        'eip155': true,
+        'chainId': 200625,
+        'tokenList': require('./tokens/akromaTokens.json'),
+        'abiList': require('./abiDefinitions/akromaAbi.json'),
+        'estimateGas': true,
+        'service': 'rpc.akroma.io',
+        'lib': new nodes.customNode('https://rpc.akroma.io', '')
     }
 };
 
