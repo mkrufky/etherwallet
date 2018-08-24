@@ -21,6 +21,7 @@ const source       = require('vinyl-source-stream');
 const uglify       = require('gulp-uglify');
 const zip          = require('gulp-zip');
 const html2js      = require('html2js-browserify');
+const ghPages      = require('gulp-gh-pages');
 
 const app          = './app/';
 const dist         = './dist/';
@@ -174,6 +175,7 @@ let jQueryFile = app + 'scripts/staticJS/jquery-1.12.3.min.js';
 let bin = app + '/bin/*';
 let staticJSSrcFile = js_destFolderStatic + js_destFileStatic;
 let readMe = './README.md';
+let cname = './CNAME';
 
 
 gulp.task('copy', ['staticJS'], function() {
@@ -200,6 +202,9 @@ gulp.task('copy', ['staticJS'], function() {
     gulp.src(readMe)
         .pipe(gulp.dest(dist));
 
+    gulp.src(cname)
+        .pipe(gulp.dest(dist));
+
     gulp.src(cxBackgroundFile)
         .pipe(gulp.dest(dist_CX + 'background'))
 
@@ -209,7 +214,7 @@ gulp.task('copy', ['staticJS'], function() {
     return gulp.src(cxSrcFiles)
         .pipe(gulp.dest(dist_CX + 'browser_action'))
 
-    .pipe(notify(onSuccess(' Copy ')))
+    .pipe(notify(onSuccess('Copy')))
 });
 
 
@@ -374,9 +379,9 @@ gulp.task('push', ['getVersion'], function() {
 // Pushes dist folder to gh-pages branch
 gulp.task('pushlive', ['getVersion'], function() {
     return gulp.src('*.js', { read: false })
-        .pipe(shell([
-            'git subtree push --prefix dist origin gh-pages'
-        ]))
+        .pipe(shell(['git subtree split --prefix dist -b gh-pages']))
+        .pipe(shell(['git push -f origin gh-pages:gh-pages']))
+        .pipe(shell(['git branch -D gh-pages']))
         .pipe(notify(onSuccess('Push Live')))
 });
 
