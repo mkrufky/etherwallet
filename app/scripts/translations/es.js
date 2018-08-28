@@ -167,7 +167,7 @@ ONBOARD_secure_title            :  'How To Protect Yourself & Your Funds',
 ONBOARD_secure_1_title          :  'How To Protect Yourself from Phishers',
 ONBOARD_secure_1_content__1     :  'Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.',
 ONBOARD_secure_1_content__2     :  'Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.',
-ONBOARD_secure_1_content__3     :  'Always check the URL: `https://wallet.akroma.io`.',
+ONBOARD_secure_1_content__3     :  'Always check the URL: `https://w.akroma.io`.',
 ONBOARD_secure_1_content__4     :  'Always make sure the URL bar has `MYETHERWALLET LLC [US]` in green.',
 ONBOARD_secure_1_content__5     :  'Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.',
 ONBOARD_secure_1_content__6     :  'Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.',
@@ -258,7 +258,7 @@ GEN_Unlock                  : 'Desbloquea tu cartera para ver tu dirección',
 GAS_PRICE_Desc              : 'Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit` & is paid to miners for including your TX in a block. Higher the gas price = faster transaction, but more expensive. Default is `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending ETH = `21000`. Sending Tokens = ~`200000`.',
 NONCE_Desc                  : 'The nonce is the number of transactions sent from a given address. It ensures transactions are sent in order & not more than once.',
-TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://wallet.akroma.io/helpers.html)',
+TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://w.akroma.io/helpers.html)',
 
 
 
@@ -588,7 +588,7 @@ ERROR_24                        :  '(error_25) Introduce un puerto válido Pleas
 ERROR_25                        :  '(error_26) Introduce un chain ID válido Please enter a valid chain ID.', // 25
 ERROR_26                        :  '(error_27) Introduce un ABI válido Please enter a valid ABI.', // 26
 ERROR_27                        :  '(error_28) Cantidad mínima 0.01 Minimum amount: 0.01. Max amount:', // 27
-ERROR_28                        :  '(error_29) **Necesitas tu archivo Keystore/JSON y la contraseña** (o clave privada) para acceder a esta cartera en el futuro. Por favor ¡guárdala y respáldala externamente! No hay modo de recuperar una cartera si no la guardas. Lee la [página de ayuda](https://wallet.akroma.io/#help) para instrucciones. You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
+ERROR_28                        :  '(error_29) **Necesitas tu archivo Keystore/JSON y la contraseña** (o clave privada) para acceder a esta cartera en el futuro. Por favor ¡guárdala y respáldala externamente! No hay modo de recuperar una cartera si no la guardas. Lee la [página de ayuda](https://w.akroma.io/#help) para instrucciones. You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
 ERROR_29                        :  '(error_30) Introduce un user & password válido. Please enter a valid user and password.', // 29
 ERROR_30                        :  '(error_31) Introduce un name válido (7+ characters, limited punctuation) Please enter a valid name (7+ characters, limited punctuation)', // 30
 ERROR_31                        :  '(error_32) Introduce un secret phrase válido. Please enter a valid secret phrase.', // 31
@@ -862,7 +862,7 @@ HELP_Sec_Title              : 'Seguridad ',
 HELP_Sec_Desc_1             : 'Si una de tus primeras preguntas es "¿Por qué debería confiar en estas personas?, se trata de algo bueno. Esperamos que lo que sigue te sirva de ayuda para disminuir tus preocupaciones. ',
 HELP_Sec_Desc_2             : 'Hemos estado funcionando desde agosto de 2015. Si buscas ["myetherwallet" en reddit](https://www.reddit.com/search?q=myetherwallet), puedes encontrar numerosas personas que nos utilizan con gran éxito. ',
 HELP_Sec_Desc_3             : 'No vamos a quitarte tu dinero ni a robar tus claves privadas. No hay código malicioso en este sitio. De hecho, las páginas "Generar Cartera" se ejecutan por completo en el cliente. Esto significa que todo el código se ejecuta en ** tu ordenador** y nunca se graba o se transmite a ningún lugar. ',
-HELP_Sec_Desc_4             : 'Comprueba la URL -- Este sitio se sirve a través de GitHub y puedes ver el código fuente aquí: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) a [https://wallet.akroma.io](https://wallet.akroma.io). ',
+HELP_Sec_Desc_4             : 'Comprueba la URL -- Este sitio se sirve a través de GitHub y puedes ver el código fuente aquí: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) a [https://w.akroma.io](https://w.akroma.io). ',
 HELP_Sec_Desc_5             : 'Para generar carteras, puedes descargar el [código fuente](https://github.com/kvhnuke/etherwallet/releases/latest). Ver #5 más arriba. ',
 HELP_Sec_Desc_6             : 'Haz una prueba y observa qué actividad de red ocurre. La manera más fácil de hacer esto es hacer clic con el botón derecho en la página y hacer clic en "inspeccionar elemento". Ve a la pestaña "Red". Genera una cartera de prueba. Verás que no hay actividad de red. Puede que veas algo que aparece como data:image/gif y data:image/png. Se trata de los códigos QR generándose en tu ordenador y por tu ordenador. No se ha transferido ni un solo byte. ',
 HELP_Sec_Desc_8             : 'Si no te encuentras cómodo utilizando esta herramienta, no la utilices bajo ningún concepto. Hemos creado esta herramienta como una manera útil para que la gente pueda generar carteras y hacer transacciones sin tener que utilizar la línea de comandos o ejecutar un nodo completo. De nuevo, por favor contáctanos si tienes inquietudes y responderemos lo más pronto posible. ¡Gracias! ',
