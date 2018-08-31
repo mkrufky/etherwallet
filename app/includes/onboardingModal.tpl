@@ -12,7 +12,7 @@
         <article class="onboarding__modal" ng-show="showOnboardSlide==1">
           <h3 class="onboarding__title">
             <span translate="ONBOARD_welcome_title">
-              Welcome to MyEtherWallet.com
+              Welcome to MyEgemWallet.com
             </span>
             <br />
             <small translate="ONBOARD_welcome_content__3">
@@ -37,7 +37,7 @@
               </h5>
               <ul>
                 <li translate="ONBOARD_welcome_content__5">
-                  MyEtherWallet is a free, open-source, client-side interface.
+                  MyEgemWallet is a free, open-source, client-side interface.
                 </li>
                 <li translate="ONBOARD_welcome_content__6">
                   We allow you to interact directly with the blockchain while remaining in full control of your keys &amp; your funds.
@@ -55,7 +55,7 @@
           <div class="onboarding__buttons text-center">
             <a ng-click="setOnboardStatus(2)" class="btn btn-primary">
               <span translate="ONBOARD_bank_title">
-                MyEtherWallet is not a Bank
+                MyEgemWallet is not a Bank
               </span>
             </a>
           </div>
@@ -64,7 +64,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==2">
           <h3 class="onboarding__title" translate="ONBOARD_bank_title">
-            MyEtherWallet is not a Bank
+            MyEgemWallet is not a Bank
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -98,7 +98,7 @@
             </a>
             <a ng-click="setOnboardStatus(3)" class="btn btn-primary">
               <span translate="ONBOARD_interface_title">
-                MyEtherWallet is an Interface
+                MyEgemWallet is an Interface
               </span>
             </a>
           </div>
@@ -107,7 +107,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==3">
           <h3 class="onboarding__title" translate="ONBOARD_interface_title">
-            MyEtherWallet is an Interface
+            MyEgemWallet is an Interface
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -176,10 +176,10 @@
                   It is stored and maintained by thousands of people (miners) across the globe who have special computers.
                 </li>
                 <li translate="ONBOARD_blockchain_content__4">
-                  It is made up of all the individual transactions sent from MyEtherWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.
+                  It is made up of all the individual transactions sent from MyEgemWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.
                 </li>
                 <li translate="ONBOARD_blockchain_content__5">
-                  When you see your balance on MyEtherWallet.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.
+                  When you see your balance on MyEgemWallet.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.
                 </li>
                 <li translate="ONBOARD_blockchain_content__6">
                    Again: <strong>we are not a bank</strong>.
@@ -267,7 +267,7 @@
 
         <article class="onboarding__modal" ng-show="showOnboardSlide==6">
           <h3 class="onboarding__title" translate="ONBOARD_whymew_title">
-            If MyEtherWallet can't do those things, what's the point?
+            If MyEgemWallet can't do those things, what's the point?
           </h3>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-4 onboarding__image">
@@ -291,7 +291,7 @@
                   If you don't like the sound of this, consider using [Coinbase](https://www.coinbase.com/) or [Blockchain.info](https://blockchain.info/wallet/#/signup). They have more familiar accounts with usernames &amp; passwords.
                 </li>
                 <li translate="ONBOARD_whymew_content__6">
-                  If you are scared but want to use MEW, [get a hardware wallet](https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html)! These keep your keys secure.
+                  If you are scared but want to use MEW, [get a hardware wallet](https://MyEtherWallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html)! These keep your keys secure.
                 </li>
               </ul>
             </div>
@@ -316,19 +316,19 @@
             How To Protect Yourself from Phishers
           </h3>
           <p translate="ONBOARD_secure_1_content__1">
-            Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.
+            Phishers send you a message with a link to a website that looks just like MyEgemWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.
           </p>
           <section class="row row--flex">
             <div class="col-xs-12 col-sm-8 onboarding__content">
               <ul>
                 <li translate="ONBOARD_secure_1_content__2">
-                  Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.
+                  Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEgemWallet Chrome Extension](https://chrome.google.com/webstore/detail/MyEgemWallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.
                 </li>
                 <li translate="ONBOARD_secure_1_content__3">
-                  Always check the URL: `https://www.myetherwallet.com`.
+                  Always check the URL: `https://www.MyEgemWallet.com`.
                 </li>
                 <li translate="ONBOARD_secure_1_content__4">
-                  Always make sure the URL bar has `MYETHERWALLET Inc` in green.
+                  Always make sure the URL bar has `MyEgemWallet in green.
                 </li>
                 <li translate="ONBOARD_secure_1_content__5">
                   Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.
@@ -438,7 +438,7 @@
             </div>
           </section>
           <h5 class="text-center" translate="ONBOARD_secure_3_content__6">
-            [Even more Security Tips!](https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)
+            [Even more Security Tips!](https://MyEtherWallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)
           </h5>
           <div class="onboarding__buttons">
             <a ng-click="setOnboardStatus(8)" class="btn btn-default">
@@ -470,43 +470,43 @@
             <div class="col-xs-12 col-sm-7">
               <ul>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__2">
                       Get a hardware wallet
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__3">
                     How to Set up MEW + MetaMask
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/offline/running-MyEgemWallet-locally.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__4">
                     How to Run MEW Offline / Locally
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-ledger-hardware-wallet.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/migration/moving-from-private-key-to-ledger-hardware-wallet.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__5">
                     How to Send via Ledger hardware wallet
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/trezor-sending-to-trezor-device.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/hardware-wallets/trezor-sending-to-trezor-device.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__6">
                     How to Send via TREZOR hardware wallet
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__7">
                        How to Send via MetaMask
                   </a>
                 </li>
                 <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/"
+                  <a href="https://MyEtherWallet.github.io/knowledge-base/"
                      target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__8">
                        Learn More or Contact Us
                   </a>

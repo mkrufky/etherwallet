@@ -189,7 +189,7 @@
         </h4>
 
         <p class="text-danger" translate="ADD_Warning_1">
-          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer Ether from it.
+          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer EGEM from it.
         </p>
 
         <div class="form-group">
@@ -461,7 +461,7 @@
                   <span ng-bind="HDWallet.defaultDPath"></span>
                 </label>
               </td>
-              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (ETH)</td>
+              <td> Metamask,TREZOR (EGEM)</td>
             </tr>
 
             <tr>
@@ -475,7 +475,7 @@
                   <span ng-bind="HDWallet.ledgerPath"></span>
                 </label>
               </td>
-              <td> Ledger (ETH)</td>
+              <td> Ledger (EGEM) in Beta*</td>
             </tr>
 
             <tr>

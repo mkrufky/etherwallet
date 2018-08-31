@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "address": "0xd13f1e4ba5a631cb0dc53cb31ff05218864f861e",
+    "symbol": "JAL",
+    "decimal": 18,
+    "type": "default"
+  }
+]

@@ -4,6 +4,7 @@ nodes.customNode = require("./nodeHelpers/customNode");
 nodes.infuraNode = require("./nodeHelpers/infura");
 nodes.metamaskNode = require("./nodeHelpers/metamask");
 nodes.nodeTypes = {
+  EGEM: "EGEM",
 	ETH: "ETH",
 	ETC: "ETC",
 	Ropsten: "ROPSTEN ETH",
@@ -15,7 +16,6 @@ nodes.nodeTypes = {
 	TOMO: "TOMO",
 	ELLA: "ELLA",
 	ETSC: "ETSC",
-	EGEM: "EGEM",
 	CLO: "CLO",
 	MUSIC: "MUSIC",
 	GO: "GO",
@@ -43,6 +43,19 @@ nodes.customNodeObj = {
 	lib: null
 };
 nodes.nodeList = {
+	egem: {
+		name: "EGEM",
+		blockExplorerTX: "https://explorer.egem.io/tx/[[txHash]]",
+		blockExplorerAddr: "https://explorer.egem.io/addr/[[address]]",
+		type: nodes.nodeTypes.EGEM,
+		eip155: true,
+		chainId: 1987,
+		tokenList: require("./tokens/egemTokens.json"),
+		abiList: require("./abiDefinitions/egemAbi.json"),
+		estimateGas: true,
+		service: "egem.io",
+		lib: new nodes.customNode("https://jsonrpc.egem.io/custom", "")
+	},
 	eth_mew: {
 		name: "ETH",
 		blockExplorerTX: "https://etherscan.io/tx/[[txHash]]",
@@ -277,19 +290,7 @@ nodes.nodeList = {
 		service: "ethereumsocial.kr",
 		lib: new nodes.customNode("https://node.ethereumsocial.kr", "")
 	},
-	egem: {
-		name: "EGEM",
-		blockExplorerTX: "https://explorer.egem.io/tx/[[txHash]]",
-		blockExplorerAddr: "https://explorer.egem.io/addr/[[address]]",
-		type: nodes.nodeTypes.EGEM,
-		eip155: true,
-		chainId: 1987,
-		tokenList: require("./tokens/egemTokens.json"),
-		abiList: require("./abiDefinitions/egemAbi.json"),
-		estimateGas: true,
-		service: "egem.io",
-		lib: new nodes.customNode("https://jsonrpc.egem.io/custom", "")
-	},
+
 	clo: {
 		name: "CLO",
 		blockExplorerTX: "https://cloexplorer.org/tx/[[txHash]]",
