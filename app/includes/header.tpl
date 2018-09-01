@@ -50,7 +50,7 @@
   }
 <section class="bg-gradient header-branding">
   <section class="container">
-    <a class="brand" href="/egemwallet/" aria-label="Go to homepage">
+    <a class="brand" href="/" aria-label="Go to homepage">
       <img src="images/logo-myegemwallet.png" height="64px" width="245px" alt="MyEgemWallet" />
     </a>
     <div class="tagline">
